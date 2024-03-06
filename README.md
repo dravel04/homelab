@@ -8,7 +8,7 @@ Guia para configurar como homelab una laptop vieja (2009), para trabjar con Dock
 - [Enlaces](#enlaces)
 - [Changelog](#changelog)
 
-## Especificaciones <span style="float: right;">[indice](#dockerlab)</span>
+## Especificaciones
 La laptop usada es del 2009, bastante antigua, cuenta con:
 - Intel(R) Pentium(R) Dual  CPU  T3200  @ 2.00GHz
 - 4GB RAM a 800Mhz
@@ -38,7 +38,7 @@ Mem:           3.7Gi       236Mi       2.8Gi       1.0Mi       685Mi       3.2Gi
 Swap:            9Gi          0B         9Gi
 ```
 
-## Instalacion de Ubuntu <span style="float: right;">[indice](#dockerlab)</span>
+## Instalacion de Ubuntu
 Para mi homelab he elegido Ubuntu 22 LTS, por facilidad de uso e instalación.
 1. Elegir el tipo de versión a instalar: **Ubuntu Server**, ya que necesitaremos logar en la máquina
 2. Configuración de red: En mi caso, ya que mi laptop la tengo conectada por Wi-Fi y no me reconocía la tarjeta de red `Continue without network`
@@ -65,7 +65,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 5. Configuración SSH: Recomiendo marcar la opción `Install OpenSSH Server`, así podremos conectar vía SSH nada mas terminar la instalación.
 6. Lanzar la instalación y reiniciar
 
-## Configuracion de red  <span style="float: right;">[indice](#dockerlab)</span>
+## Configuracion de red
 Algunas consideraciones previas:
 - En mi caso, decido asignar IP fija para no estar modificando el `/etc/hosts` de mi equipo al alias asignado
 - opción de configuración `optional: true` para evitar el error `a start job is running for wait for network to be configured`
@@ -103,7 +103,7 @@ network:
 3. Aplicamos los cambios: `sudo netplan apply`
 4. Para verificar la asignación de IP, podemos lanzar el comando `ip a`
 
-## Instalacion de Docker  <span style="float: right;">[indice](#dockerlab)</span>
+## Instalacion de Docker
 Siguiendo la documentación oficial:
 1. Configuramos el repositorio Docker de `apt`:
 ```sh
@@ -139,15 +139,14 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 > docker run hello-world
 > ```
 
-## Enlaces  <span style="float: right;">[indice](#dockerlab)</span>
+## Enlaces
 Enlances de referencia que he usado durante el proceso:
 - [How To Install Ubuntu 22.04 LTS Server Edition](https://ostechnix.com/install-ubuntu-server/)
 - [A start job is running...](https://askubuntu.com/questions/972215/a-start-job-is-running-for-wait-for-network-to-be-configured-ubuntu-server-17-1)
 - [Connect to WiFi from command line](https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line)
 - [Instalacion Docker](https://docs.docker.com/engine/install/linux-postinstall/)
 
-
-## Changelog  <span style="float: right;">[indice](#dockerlab)</span>
+## Changelog
 **DATE_FORMAT**: *%d/%m/%Y*
 - **06/03/2023** - Configuración del laboratorio
 
