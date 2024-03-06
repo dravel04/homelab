@@ -1,0 +1,33 @@
+network:
+  ethernets:
+    enp2s0:
+      dhcp4: false
+      optional: true
+      addresses:
+      - IP_HERE/24
+      nameservers:
+        addresses:
+        - 8.8.8.8
+        - 1.1.1.1
+        search: []
+      routes:
+      - to: default
+        via: GW_HERE
+  wifis:
+    wlx002163aa274c:
+      dhcp4: false
+      optional: true
+      addresses:
+      - IP_HERE/24
+      nameservers:
+        addresses:
+        - 8.8.8.8
+        - 1.1.1.1
+        search: []
+      routes:
+      - to: default
+        via: GW_HERE
+      access-points:
+        "SSID_NAME_HERE":
+          password: "PASSWORD_HERE"
+  version: 2
