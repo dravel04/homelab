@@ -11,7 +11,7 @@ Guia para configurar como homelab una laptop vieja (2009), para trabjar con Dock
 ## Especificaciones
 La laptop usada es del 2009, bastante antigua, cuenta con:
 - Intel(R) Pentium(R) Dual  CPU  T3200  @ 2.00GHz
-- 4GB RAM a 800Mhz
+- 4GB RAM a 666Mhz
 - 500GB HDD 3,5" a 5600rpm
 ```sh
 bronzeqq@dockerlab:~$ lscpu 
