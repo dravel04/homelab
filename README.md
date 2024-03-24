@@ -103,6 +103,10 @@ network:
 3. Aplicamos los cambios: `sudo netplan apply`
 4. Para verificar la asignación de IP, podemos lanzar el comando `ip a`
 
+> [!TIP]
+> Para evitar que el portatil se suspenda al plegar la pantalla modificaremos el fichero `/etc/systemd/logind.conf` donde modificaremos `HandleLidSwitch=ignore`
+
+
 ## Instalacion de Docker
 Siguiendo la documentación oficial:
 1. Configuramos el repositorio Docker de `apt`:
